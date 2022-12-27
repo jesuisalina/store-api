@@ -1,9 +1,9 @@
 package com.store_api;
 
+import com.store.storage.CsvProductStorage;
+import com.store.storage.ProductStorage;
 import com.store_api.dba.ProductProvider;
 import com.store_api.dba.ProductProviderImpl;
-import com.store_api.dba.storage.CsvProductStorage;
-import com.store_api.dba.storage.ProductStorage;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

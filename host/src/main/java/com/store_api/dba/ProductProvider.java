@@ -1,7 +1,7 @@
 package com.store_api.dba;
 
-import com.store_api.rest.api.Product;
-import com.store_api.rest.api.ProductCategory;
+import com.store.storage.Product;
+import com.store.storage.ProductCategory;
 
 import java.io.IOException;
 import java.util.List;

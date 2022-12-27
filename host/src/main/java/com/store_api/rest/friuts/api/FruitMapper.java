@@ -1,6 +1,6 @@
 package com.store_api.rest.friuts.api;
 
-import com.store_api.rest.api.Product;
+import com.store.storage.Product;
 import org.mapstruct.Mapper;
 
 @Mapper(

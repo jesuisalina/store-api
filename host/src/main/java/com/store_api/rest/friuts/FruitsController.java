@@ -1,7 +1,7 @@
 package com.store_api.rest.friuts;
 
+import com.store.storage.ProductCategory;
 import com.store_api.dba.ProductProvider;
-import com.store_api.rest.api.ProductCategory;
 import com.store_api.rest.friuts.api.Fruit;
 import com.store_api.rest.friuts.api.FruitMapper;
 import org.springframework.web.bind.annotation.GetMapping;

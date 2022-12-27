@@ -1,8 +1,8 @@
 package com.store_api.dba;
 
-import com.store_api.dba.storage.ProductStorage;
-import com.store_api.rest.api.Product;
-import com.store_api.rest.api.ProductCategory;
+import com.store.storage.Product;
+import com.store.storage.ProductCategory;
+import com.store.storage.ProductStorage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
