@@ -1,3 +1,17 @@
 rootProject.name = 'store-api'
 
 include "host", "storage"
+
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            library('lombock', 'org.projectlombok:lombok:1.18.24')
+            library('junit-jupiter-api', 'org.junit.jupiter:junit-jupiter-api:5.9.0')
+            library('junit-jupiter-engine', 'org.junit.jupiter:junit-jupiter-engine:5.9.0')
+            library('spring-boot-starter-web', 'org.springframework.boot:spring-boot-starter-web:3.0.0')
+            library('mapstruct', 'org.mapstruct:mapstruct:1.5.3.Final')
+            library('lombok-mapstruct-binding', 'org.projectlombok:lombok-mapstruct-binding:0.2.0')
+        }
+    }
+}

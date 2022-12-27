@@ -14,15 +14,15 @@ application {
 }
 
 dependencies {
-    compileOnly 'org.projectlombok:lombok:1.18.24'
+    compileOnly libs.lombock
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
-    implementation 'org.springframework.boot:spring-boot-starter-web:3.0.0'
-    implementation 'org.mapstruct:mapstruct:1.5.3.Final'
-    implementation 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+    testImplementation libs.junit.jupiter.api
+    testRuntimeOnly libs.junit.jupiter.engine
+    implementation libs.spring.boot.starter.web
+    implementation libs.mapstruct
+    implementation libs.lombok.mapstruct.binding
 
     implementation project(":storage")
 }
