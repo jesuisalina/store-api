@@ -1,6 +1,5 @@
-package com.store_api.dba.storage;
+package com.store.storage;
 
-import com.store_api.rest.api.Product;
 import java.io.IOException;
 import java.util.List;
 

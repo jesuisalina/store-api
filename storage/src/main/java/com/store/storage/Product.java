@@ -1,4 +1,4 @@
-package com.store_api.rest.api;
+package com.store.storage;
 
 public record Product(
         int id,
