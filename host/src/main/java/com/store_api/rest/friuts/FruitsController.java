@@ -4,6 +4,7 @@ import com.store.storage.ProductCategory;
 import com.store_api.dba.ProductProvider;
 import com.store_api.rest.friuts.api.Fruit;
 import com.store_api.rest.friuts.api.FruitMapper;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,7 @@ public class FruitsController {
         this.mapper = mapper;
     }
 
+    @CrossOrigin()
     @GetMapping
     public List<Fruit> GetAll() throws IOException {
         var products = productProvider.GetByCategory(ProductCategory.Fruit);
