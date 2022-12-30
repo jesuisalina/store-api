@@ -18,10 +18,16 @@ public class Bootstrap {
 
     @Bean
     public ProductStorage storage() {
+        var fileUrl = getClass()
+                .getClassLoader()
+                .getResource("products.csv");
+        if(fileUrl == null) {
+            throw new IllegalStateException("Not found file products.csv");
+        }
         return CsvProductStorage
                 .builder()
                 .delimiter(",")
-                .fileName("data/products.csv")
+                .fileName(fileUrl.getPath())
                 .build();
     }
 }
